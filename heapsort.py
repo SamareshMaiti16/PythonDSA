@@ -33,9 +33,9 @@ def max_heapify(list, index, size):
         list[largest], list[index] = list[index], list[largest] # swap the index element with it's right or left child if any of them is larger than the index
         max_heapify(list, largest, size)    #call max heapify on the new largest index to modify the lower branches to maintain the heap property
  
- 
-list = input('Enter the list of numbers: ').split() #Take user input to get the array of numbers
-list = [int(x) for x in list]   #modify the list to change all elements to integer
-heapsort(list)  #sort the list
-print('Sorted list: ', end='')  #print the sorted list
-print(list)
+if __name__ == "__main__":
+    list = input('Enter the list of numbers: ').split() #Take user input to get the array of numbers
+    list = [int(x) for x in list]   #modify the list to change all elements to integer
+    heapsort(list)  #sort the list
+    print('Sorted list: ', end='')  #print the sorted list
+    print(list)
