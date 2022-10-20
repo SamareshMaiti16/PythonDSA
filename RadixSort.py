@@ -43,7 +43,19 @@ def radixSort(arr):
         exp_track = exp_track * 10
 
 if __name__ == "__main__" : 
-    arr = [237,146,259,348,152,163,235,48,36,62]
+    arr = []
+
+    while(True):
+        temp = int(input("Enter Value : "))
+        arr.append(temp)
+        choice = input("Enter Y/y to continue or N/n to exit : ")
+        if(choice == 'Y' or choice == 'y'):
+            continue
+        else:
+            break
+    
+    print("\nEntered array : ",arr)
+
     radixSort(arr)
 
     print("\n\nSorted Array : ",arr)
